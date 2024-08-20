@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 10);
+}
+.div-one{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    line-height: 50px;
+    background-color: black;
+}
+h1{
+    position: relative;
+    right: 50px;
+    color: white;
+}
+ul{
+    display: flex;
+    /* border: 1px solid white; */
+    margin-left: 350px;
+    position: relative;
+    left: 50px;
+}
+li{
+    
+    list-style: none;
+    padding-left: 20px;
+    /* border: 1px solid white; */
+    margin-left:40px;
+    padding-right: 20px;
+}
+   
+a{
+    position: relative;
+    left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+a:hover{
+    color: red;
+}
+h1:active{
+    color: brown;
+}
+
+
+.div-two{
+    margin-top: 10px;
+    height: 500px;
+    width: 90%;
+    display: flex;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+h2{
+   text-align: center;
+   font-size: 35px;
+   position: relative;
+   top: 100px;
+   right: 100px;
+   color: white;
+   left: 20px;
+}
+span{
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+    left: 118px;
+    color: blue;
+}
+p{
+    width: 500px;
+    position: relative;
+    top: 100px;
+    letter-spacing: 2px;
+    left: 23%;
+    font-size: 23px;
+    color: white;
+    line-height: 30px;
+}
+
+.three{
+    font-size: 18px;
+    margin-top:10px;
+    border-radius: 3px;
+    background-color: blue;
+    color: black;
+}
+
+.six{
+    position: relative;
+    font-size: 17px;
+    margin-top:10px;
+    border-radius: 3px;
+    background-color: black;
+    color: blue;
+    left: 20px;
+}
+
+.five{
+    height: 500px;
+      width: 90%;
+      /* border: 1px solid white; */
+      text-align: center;
+      margin-top: 100px;
+}
+
+img{
+    position: relative;
+    
+    height: 380px;
+    right: 210px;
+    top:20px
+}

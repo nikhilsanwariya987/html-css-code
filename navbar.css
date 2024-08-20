@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NYnGDqrQm-gbf4fbXkaMBzmVLlf2rZdOLA&s");
+    background-size: cover;
+}
+ul{
+    list-style: none;
+    background-color: black;
+    color: white;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul li:hover{
+    background-color: green;
+    color: white;
+}
+
+.dropdown{display: none;} 
+ ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    margin-left: -0.29cm;
+    margin-top: 0.27cm;
+}
+.dropdown ul{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown ul li{
+    display: block;
+}
+ .dropdown2 {display: none;}
+
+.dropdown ul li:hover .dropdown2{
+    display: block;
+    position: absolute;
+    margin-left: 3.5cm;
+    margin-top: -0.75cm;
+}
