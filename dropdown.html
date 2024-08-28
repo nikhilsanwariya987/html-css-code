@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header{
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            /* height: 100px; */
+        }
+
+        .mid ul{
+            display: flex;
+        }
+
+        .mid ul li{
+
+            list-style: none;
+            margin: 0px 10px;
+            font-size: 22px;
+        }
+
+        .mid ul li:hover{
+
+            color: yellow;
+            cursor: pointer;
+        }
+
+        .right button{
+
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: yellow;
+            border: none;
+            cursor: pointer;
+        }
+
+        .right button:hover{
+            background-color: green;
+            color: white;
+        }
+
+        .sub-product ul{
+            display: block;
+        }
+
+        .product{
+            position: relative;
+        }
+
+        .sub-product{
+            /* display: none; */
+            visibility: hidden;
+            position: absolute;
+            box-shadow: 0px 0px 10px rgb(170, 168, 168);
+            background-color: white;
+            margin-top: 18px;
+            transition: all 400ms linear;
+        }
+
+        .product:hover .sub-product{
+            /* display: block; */
+            visibility: visible;
+        }
+
+        .sub-product ul li{
+
+            margin: 10px 0px;
+            padding: 10px;
+            color: black;
+        }
+
+        .sub-product ul li:hover{
+
+            background-color: black;
+        }
+
+
+        .sub-category{
+
+            position: absolute;
+            left: 110px;
+            top: 0px;
+            box-shadow: 0px 0px 10px rgb(170, 168, 168);
+            background-color: white;
+            visibility: hidden;
+        }
+
+        .kapde:hover .sub-category{
+            visibility: visible;
+        }
+
+        .bar{
+            display: none;
+        }
+
+        i{
+            font-size: 30px;
+            color: yellow;
+        
+        }
+
+        @media (max-width:770px){
+
+            .mid,.right{
+                display: none;
+            }
+            .bar{
+                display: block;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="left">
+            <h1>Logo</h1>
+        </div>
+        <div class="mid">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li class="product">
+                   <span>Products</span>
+                   <div class="sub-product">
+                    <ul>
+                        <li class="kapde">
+                            Mens
+                            <ul class="sub-category">
+                                <li>Jeans</li>
+                                <li>Shirt</li>
+                                <li>Tshirt</li>
+                                <li>Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="kapde">
+                            Womens
+                            <ul class="sub-category">
+                                <li>Toper</li>
+                                <li>Jeans</li>
+                                <li>Tshirt</li>
+                                <li>Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="kapde">
+                            Kids
+                            <ul class="sub-category">
+                                <li>Jeans</li>
+                                <li>Shirt</li>
+                                <li>Tshirt</li>
+                                <li>Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="kapde">
+                            Others
+                            <ul class="sub-category">
+                                <li>Laptop</li>
+                                <li>Mobile</li>
+                                <li>Ear Phones</li>
+                                <li>Charger</li>
+                            </ul>
+                        </li>
+                      </ul>
+                   </div> 
+                </li>
+                <li>Contact</li>
+                <li>Register</li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+        
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+</body>
+</html>
